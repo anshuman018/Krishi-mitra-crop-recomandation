@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>KRISHI MITRA</title>
+    <link rel="stylesheet" href="{{url_for('static',filename='style/myhome.css')}}">
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@2.6.4/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            emailjs.init("TXVJYvf6AcYcL6wLo");  
+        })();
+    </script>
+  </head>
+  <body>
+  
+    <section class="sec1 " id="page-specific">
+        <div class="navbar">
+          <nav>
+            <ul>
+             <a href="#"> <li>Home</li></a>
+             <a href="#about_sec"> <li>About</li></a>
+             <a href="#"> <li>Contact</li></a>
+              <a href="#predict_sec" action="/Predict"><li>Predict</li></a>
+            </ul>
+          </nav>
+        </div>
+       
+     
+      <video class="video1" src="./static/style/vid2.mp4" autoplay muted loop>
+ </video>
+ <div class="con1">
+  <h1 class="heading">KRISHI MITRA</h1>
+   <h2 class="subheading1">   
+    -Harvest Smarter: Predict, Plan, Prosper.<h2>
+   
+
+</div>
+</section>
+
+        <section class="sec2">
+            
+          <h3 class="title1">Let's Start New Journey With KRISHI MITRA</h3>
+          <img src="/static/style/img2.png" class="img2" alt="">
+          <div class="rowing">
+         <div class="para2">
+          <p> <h1 class="sub_title1">KRISHI MITRA</h1> <br> Welcomes you on our website, Hope you are earning well from your farm 
+            but we are here for you to provide some suggetions about your crop cultivation 
+          We recommends you to which crop you should grow in your farm for better yields. Its 
+          very easy to predict which crop you should grow on the basis of your soil nutrients 
+          just you need to know your soil nutrients for this you can test your soil in lab.</p>
+
+         </div>
+          
+          <div id="predict_sec" class="predict">
+            
+            <h1>CROP PREDICTION SYSTEM</h1>
+            <p class="para4"> 
+              Our Crop Prediction System uses advanced machine learning to predict the best crops for your land based on soil, weather, and historical data. By leveraging real-time analytics, farmers can optimize their planting strategies, ensuring higher productivity and reduced risk. This system empowers sustainable agriculture, helping farmers make data-driven decisions for a prosperous future.
+
+            </p>
+           
+
+            <form class="butt_to_navigate" action="/Predict">
+              <input type="submit" id="Predict" name="Predict" action="/Predict" value="Predict">
+            </form>
+          </div>
+        </div>
+        </section>
+            <h1 class="title2">Farmer's work</h1>
+
+             <section class="sec3">
+          
+
+                <div class="swiper">
+                  
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="./static/style/img5.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="./static/style/img6.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="./static/style/img7.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="./static/style/img8.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="./static/style/img9.jpg" alt=""></div>
+                    
+                  </div>
+                  
+                  <div class="swiper-pagination"></div>
+                  
+                  <div class="swiper-button-prev"></div>
+                  <div class="swiper-button-next"></div>
+                  
+                  
+                </div>
+           
+              </section>
+
+              <section id="about_sec" class="sec4">
+                  <h1 class="title3">More About Us</h1>
+                  <img src="./static/style/img3.jpg" class="img3" alt="">
+                  <div class="box1"><h3 class="sub_title2">At Krishi MITRA, our goal is simple: to empower farmers with the tools, knowledge, and support they need to succeed. We believe that "Farming is the backbone of our world," and we are dedicated to ensuring that farmers thrive by adopting modern, sustainable practices.</h3>
+                    <div class="line"></div>
+                    <h2 class="title4">Krishi Mitra</h2>
+                    
+                  </div>
+              </section>
+          
+              <section class="sec5">
+                <div class="prt1">
+                  <img class="sec5img1" src="./static/style/sec5_img1.png" alt="">
+
+                </div>
+                <div class="prt2">
+                  <img class="sec5img2" src="./static/style/sec5_img2.png" alt="">
+                </div>
+                <div class="main_box">
+                  <form id="feedbackForm">
+                    <label for="email">Email:</label>
+                    <input class="email" type="email" id="email" name="email" required>
+                
+                    <label class="text_phone" for="phone">Phone Number:</label>
+                    <input class="phone" type="tel" id="phone" name="phone" required>
+                
+                    <label for="feedback">Feedback:</label>
+                    <textarea class="feedback" id="feedback" name="feedback" rows="5" required></textarea>
+                
+                    <input type="submit" value="Submit">
+                </form>
+                </div>
+              </section>
+              <footer >
+                <div class="footer-container">
+           
+                  <div class="footer-left">
+                    <h2>Krishi Mitra</h2>
+                    <p>Empowering Farmers with Technology</p>
+                  </div>
+                  <p class="bottom_copyright">&copy; 2024 Krishi Mitra. All rights reserved.</p>
+              
+                  <div class="footer-right">
+                    <a href="#">Home</a>
+                    <a href="#about_sec">About Us</a>
+                    <a href="#">Services</a>
+                    <a href="#">Contact</a>
+                    <a href="#">Blog</a>
+                  </div>
+                </div>
+              
+                
+            
+            
+              
+              </footer>
+              
+              
+             <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+             <script>const swiper = new Swiper('.swiper', {
+              autoplay:{
+                delay:2000,
+                disableOnInteraction:false, 
+              },
+              
+              loop: true,
+            
+              pagination: {
+                el: '.swiper-pagination',
+                clickable:true,
+              },
+            
+             
+              navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+              },
+            
+             
+            });</script>
+
+           
+            </body>
+            <script>
+    window.onscroll = function() {
+      fixNavbar();
+    };
+
+    function fixNavbar() {
+      var navbar = document.querySelector(".navbar");
+
+  
+      if (window.scrollY > window.innerHeight) {
+        navbar.classList.add("scroll-past");
+      } else {
+        navbar.classList.remove("scroll-past");
+      }
+    }
+  </script>
+</html>
